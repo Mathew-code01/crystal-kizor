@@ -1,0 +1,5 @@
+# Submission Note
+
+The site is organized around one editorial idea: Crystal’s work connects spaces, ideas, and people. The hero establishes her practice, then selected work grounds the introduction before the wider initiatives are grouped into Design & Build, Knowledge & Voice, and People & Purpose. That structure makes the relationships scannable without turning seven distinct efforts into interchangeable cards.
+
+Warm ivory, charcoal, clay, and olive pair with Cormorant Garamond and Manrope. Supplied portraits and project photography carry the visual story; images are optimized to WebP and served with responsive Next.js Image sizing. The layout uses Tailwind CSS 4, semantic sections, keyboard-visible focus, reduced-motion support, and a compact Escape-close mobile menu. The App Router page remains statically prerendered. Direct enquiry details and the live domain were not supplied, so the site avoids invented links and leaves canonical/social URLs unset until deployment configuration is known.

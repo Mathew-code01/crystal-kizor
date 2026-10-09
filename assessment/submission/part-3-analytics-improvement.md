@@ -1,0 +1,7 @@
+# Part 3 — Analytics and Improvement
+
+Track qualified routes, not just visits: sessions and source/referrer, landing section, work and ecosystem views, contact-path clicks, outbound destinations, completed enquiries if a real form exists, and mobile/desktop funnel completion. Pair privacy-conscious Vercel Web Analytics or Plausible with Search Console and periodic Core Web Vitals checks. Avoid collecting message contents or sensitive identifiers; agree the privacy notice and retention settings before instrumentation.
+
+Five enquiries from 5,000 visits is a 0.1% observed enquiry rate, not a diagnosis. First validate the measurement and destinations: click every path, test forms and mail clients, and compare tracked events with enquiries actually received. Segment by source, landing page, device, and visitor intent. Check traffic relevance, whether visitors reach Work, Ecosystem, and Contact, whether mobile visitors abandon, and whether contact details are discoverable. Review Core Web Vitals, search queries, campaign promise/content match, and test common tasks with a few users.
+
+Then write a testable hypothesis and change one high-impact issue at a time, such as clarifying a verified project or speaking enquiry route. Compare qualified enquiry rates over a sufficient period. Do not optimize raw clicks, draw conclusions from tiny segments, or assume the website is the cause before checking traffic quality and broken measurement.

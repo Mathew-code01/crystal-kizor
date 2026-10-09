@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
+import { siteOrigin } from "@/lib/site-config";
 import "./globals.css";
 import { Cormorant_Garamond, Manrope } from "next/font/google";
 
@@ -25,11 +26,36 @@ export const metadata: Metadata = {
 	description:
 		"Explore the work, ideas, and initiatives of Crystal Kizor across architecture, design, education, and social impact.",
 	applicationName: "Crystal Kizor",
+	metadataBase: siteOrigin,
+	alternates: siteOrigin
+		? { canonical: new URL("/", siteOrigin) }
+		: undefined,
 	openGraph: {
 		type: "website",
 		title: "Crystal Kizor — Architecture, Design & Impact",
 		description: "Architecture, ideas, and initiatives shaped around better living.",
 		siteName: "Crystal Kizor",
+		...(siteOrigin
+			? {
+					url: siteOrigin.toString(),
+					images: [
+						{
+							url: new URL("/og/crystal-kizor.png", siteOrigin),
+							width: 1200,
+							height: 630,
+							alt: "Crystal Kizor — Architecture, Ideas, Impact",
+						},
+					],
+				}
+			: {}),
+	},
+	twitter: {
+		card: "summary_large_image",
+		title: "Crystal Kizor — Architecture, Design & Impact",
+		description: "Architecture, ideas, and initiatives shaped around better living.",
+		...(siteOrigin
+			? { images: [new URL("/og/crystal-kizor.png", siteOrigin)] }
+			: {}),
 	},
 	robots: { index: true, follow: true },
 };
